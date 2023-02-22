@@ -1,0 +1,29 @@
+<div class="nav">
+    <h1 class="logo">D-Hypermarket</h1>
+
+    <div class="search">
+        <input type="text" placeholder="Search products" />
+        <button>Search</button>
+    </div>
+
+    <div [ngSwitch]="menutype">
+        <ul class="nav-list" *ngSwitchCase="'default'">
+            <li><a href="#" [routerLink]="['/seller']">Seller</a></li>
+            <li><a [routerLink]="['/']">Home</a></li>
+            <li><a [routerLink]="['/seller']" routerLinkActive="router-link-active">Login</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+
+        <ul class="nav-list" *ngSwitchCase="'seller'">
+            <li><a [routerLink]="['/seller/add']">Add Product</a></li>
+            <li><a [routerLink]="['/seller/home']">List</a></li>
+            <li><a (click)="logout()">LogOut</a></li>
+
+            <li><a >{{sellerDetails!.name}}</a></li>
+        </ul>
+
+        
+    </div>
+
+
+</div>

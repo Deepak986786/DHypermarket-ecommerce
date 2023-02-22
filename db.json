@@ -1,0 +1,168 @@
+{
+  "seller": [
+    {
+      "name": "rahul  singh",
+      "email": "rahl@gmail.com",
+      "password": "rks37",
+      "id": 1
+    },
+    {
+      "name": "deepak kumar  singh",
+      "email": "dks@gmail.com",
+      "password": "pass1",
+      "id": 2
+    },
+    {
+      "name": "shyam",
+      "password": "shaym",
+      "email": "shyam@outlook.com",
+      "id": 3
+    },
+    {
+      "name": "soumya",
+      "password": "soumya",
+      "email": "soumya@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 6
+    },
+    {
+      "name": "priti kumari",
+      "password": "pretty",
+      "email": "priti@google.com",
+      "id": 7
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 8
+    },
+    {
+      "name": "pinki kumari",
+      "password": "pinku",
+      "email": "priti@google.com",
+      "id": 9
+    },
+    {
+      "name": "abhishek ",
+      "password": "abhi",
+      "email": "abhi@email.com",
+      "id": 10
+    },
+    {
+      "name": "Abhishek",
+      "password": "ABHI",
+      "email": "abhi@email.com",
+      "id": 11
+    },
+    {
+      "name": "Abhishek",
+      "password": "ABHI",
+      "email": "abhi@email.com",
+      "id": 12
+    },
+    {
+      "name": "Abhishek",
+      "password": "ABHI",
+      "email": "abhi@email.com",
+      "id": 13
+    },
+    {
+      "name": "Abhishek",
+      "password": "ABHI",
+      "email": "abhi@email.com",
+      "id": 14
+    },
+    {
+      "name": "Abhishek",
+      "password": "ABHI",
+      "email": "abhi@email.com",
+      "id": 15
+    },
+    {
+      "name": "Abhishek",
+      "password": "ABHI",
+      "email": "abhi@email.com",
+      "id": 16
+    },
+    {
+      "name": "pd ",
+      "password": "pd",
+      "email": "pd@gmail.com",
+      "id": 17
+    },
+    {
+      "name": "pd ",
+      "password": "pd",
+      "email": "pd@gmail.com",
+      "id": 18
+    },
+    {
+      "name": "pinki kumari",
+      "password": "asaSA",
+      "email": "abhi@email.com",
+      "id": 19
+    },
+    {
+      "name": "pinki kumari",
+      "password": "",
+      "email": "",
+      "id": 20
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 21
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 22
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 23
+    },
+    {
+      "name": "",
+      "password": "deepeka",
+      "email": "",
+      "id": 24
+    }
+  ],
+  "product": [
+    {
+      "name": "iphone 14 pro",
+      "category": "mobiles",
+      "price": "149999",
+      "color": "grey",
+      "description": "The brand new iphone 14 pro with stylish looks and marvellous finishing and 16 gb of ram ",
+      "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrdordk9K2ztz54GDiSfYeLNAITFwcaSUzLQ&usqp=CAU",
+      "id": 1
+    },
+    {
+      "name": "iphone 14 pro",
+      "category": "mobiles",
+      "price": "149999",
+      "color": "purple",
+      "description": "The brand new iphone 14 pro with stylish looks and marvellous finishing and 16 gb of ram ",
+      "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKNEXymbiHm5LMbjJPuIkmlOByQ9G_i29VqQ&usqp=CAU",
+      "id": 2
+    }
+  ]
+}
