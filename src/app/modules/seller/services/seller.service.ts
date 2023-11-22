@@ -20,14 +20,14 @@ export class SellerService {
   constructor(private http:HttpClient , private router:Router) { }
   isLoggedIn  = new BehaviorSubject<boolean>(false);
 
-  userSignUp(data:signUp) {
-    return this.http.post(url , data).subscribe(result=>{
-      if (result) {
-        localStorage.setItem('seller',JSON.stringify(result));
+  userSignUp(data:any) {
+    // return this.http.post(url , data).subscribe(result=>{
+    //   if (result) {
+        localStorage.setItem('seller',JSON.stringify(data));
         this.isLoggedIn.next(true);
         this.router.navigate(['seller/home']);
-      }
-    })
+    //   }
+    // })
   }
   /**
    *  this method checks if the seller is logged in on not
@@ -44,7 +44,7 @@ export class SellerService {
         this.router.navigate(['/seller/home']);
     }
   }
-
+ 
   login(data:LoginData){
     return this.http.get(url+`?email=${data.email}&password=${data.password}`).subscribe((response:any)=> {
         console.log("response", response);

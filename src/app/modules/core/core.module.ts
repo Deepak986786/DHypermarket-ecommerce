@@ -4,6 +4,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule ,FormsModule} from '@angular/forms';
+import { MaterialComponentModule } from '../material.module';
 
 
 
@@ -15,7 +17,10 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MaterialComponentModule
   ],
   exports: [
     HeaderComponent,
