@@ -10,12 +10,14 @@ import { MatCardModule } from "@angular/material/card";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatSelectModule } from "@angular/material/select";
 import { MatTableModule } from "@angular/material/table";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner"
 
 
 
 
 
 @NgModule({
+    imports: [],
     exports: [
         MatFormFieldModule,
         MatInputModule,
@@ -27,7 +29,8 @@ import { MatTableModule } from "@angular/material/table";
         MatCardModule,
         MatMenuModule,
         MatSelectModule,
-        MatTableModule
+        MatTableModule,
+        MatProgressSpinnerModule
     ]
 })
 export class MaterialComponentModule { }

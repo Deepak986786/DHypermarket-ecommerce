@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div class="main-container">
+    <div class="category">
+        <div class="wrapper">
+            <div class="item" *ngFor="let item of categoryList">
+                <img src={{item.url}} alt={{item.name}} />
+                <h3>{{item.name}}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="image-slider">
+         <image-carousel></image-carousel>
+    </div>
+</div>

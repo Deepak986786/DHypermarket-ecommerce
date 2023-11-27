@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule ,FormsModule} from '@angular/forms';
 import { MaterialComponentModule } from '../material.module';
+import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
 
 
 
@@ -13,14 +14,15 @@ import { MaterialComponentModule } from '../material.module';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ImageCarouselComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    MaterialComponentModule
+    MaterialComponentModule,
   ],
   exports: [
     HeaderComponent,
