@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './modules/core/components/home/home.component';
+import { ErrorComponent } from './modules/core/components/error/error.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,9 @@ const routes: Routes = [
   },
   {
     path: 'seller', loadChildren: () => import('./modules/seller/seller.module').then(m => m.SellerModule)
+  },
+  {
+    path:"**",component : ErrorComponent
   }
 ];
 

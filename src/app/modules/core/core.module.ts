@@ -7,6 +7,12 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule ,FormsModule} from '@angular/forms';
 import { MaterialComponentModule } from '../material.module';
 import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CartComponent } from './components/cart/cart.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { ErrorComponent } from './components/error/error.component';
+import { SearchProductComponent } from './components/search-product/search-product.component';
 
 
 
@@ -15,7 +21,13 @@ import { ImageCarouselComponent } from './components/image-carousel/image-carous
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    ProductComponent,
+    ProductDetailsComponent,
+    CartComponent,
+    PaymentComponent,
+    ErrorComponent,
+    SearchProductComponent
   ],
   imports: [
     CommonModule,

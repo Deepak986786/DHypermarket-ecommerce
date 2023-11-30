@@ -11,3 +11,29 @@
          <image-carousel></image-carousel>
     </div>
 </div>
+<div class="">
+    <!-- {{formatDate("Fri Dec 01 2023 00:00:00 GMT+0530 (India Standard Time)")}} -->
+</div>
+<mat-form-field>
+<mat-label>Start Date</mat-label>
+
+<input
+  matInput
+  [matDatepicker]="start"
+  placeholder="MM/DD/YYYY"
+  [(ngModel)]="startDate"
+ 
+/>
+
+<mat-datepicker-toggle
+  matSuffix
+  [for]="start"
+></mat-datepicker-toggle>
+<mat-datepicker #start></mat-datepicker>
+</mat-form-field>
+
+
+<h2>{{startDate.toLocaleDateString() | date :'YYYY-MM-ddTHH:mm:ss' +"Z"}}</h2>
+
+<button (click)="sendRequest()">send</button>
+<!-- (dateChange)="formatDate($event,'startDate')" -->

@@ -10,9 +10,9 @@ export class ImageCarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    setInterval(()=>{
-      this.showNext();
-    },4000)
+    // setInterval(()=>{
+    //   this.showNext();
+    // },4000)
   }
 
   images: string[] = [
