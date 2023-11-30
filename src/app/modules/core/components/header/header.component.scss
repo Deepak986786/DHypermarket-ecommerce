@@ -6,50 +6,33 @@ $riflegreengrey: #474642;
 $backgroundcolor: #388;
 
 .nav {
- background-color: $flashlightcolor;
+  background-color: $flashlightcolor;
   color: $riflegreengrey;
-
+ width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
   padding: 5px;
+  // height: 60px;
 }
 
 .logo {
- // background-color: #fff;
-   display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content:center;
+  // background-color: #fff;
+  display: flex;
+  padding: 4px 20px;
+  // height: 60px;
 }
 
 .search {
   display: flex;
-  flex: 1;
+  width: 40%;
+  height: 60px;
   flex-direction: row;
-justify-content: center;
-  padding: 10px;
- // background-color: $mossgreen;
+  justify-content: center;
+  padding: 4px 20px;
+  // background-color: $mossgreen;
 
-  input{
-        width: 60%;;
-        border: none;
-        border-bottom:1px solid $backgroundcolor ;
-        background: transparent;
-    
-  }
-
-  input:focus{
-       border: none;
-       border-bottom:1px solid $backgroundcolor ;
-       color: $riflegreengrey;
-  }
-
-  
-
-  
   button {
     color: $backgroundcolor;
     border: none;
@@ -61,21 +44,24 @@ justify-content: center;
 .nav-list {
   list-style-type: none;
   display: flex;
-  flex: 1;
+  // width: 30%;
+  // height: 60px;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 4px 20px;
+  // background-color: $bluebg;
 
-  padding: 10px;
- // background-color: $bluebg;
-}
-
-.nav-list {
-  li {
-    margin-left: 10px;
-
-    a{
-        text-decoration: none;
+  .item{
+    // background-color:pink;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    span{
+      margin-left: 8px;
     }
   }
 }
+
+

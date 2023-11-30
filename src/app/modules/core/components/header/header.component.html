@@ -1,11 +1,33 @@
 <div class="nav">
-    <h1 class="logo">D-Hypermarket</h1>
-
-    <div class="search">
-        <input matInput type="text" placeholder="Search products" />
-        <button>Search</button>
+    <div class="logo">
+        <h1 class="" routerLink="/">D-Hypermarket</h1>
     </div>
 
+    <div class="search">
+        <mat-form-field style="height: 40px;width: 100%;" appearance="standard">
+            <mat-label></mat-label>
+            <input matInput type="text" placeholder="Search products" />
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="nav-list">
+        <div class="item" routerLink="user">
+            <mat-icon>account_circle</mat-icon>
+            <span>Login</span>
+        </div>
+        <div class="item">
+            <mat-icon>shopping_cart</mat-icon>
+            <span>Cart</span>
+        </div>
+        <div class="item">
+            <mat-icon>store</mat-icon>
+            <span>Become a Seller</span>
+        </div>
+        <div class="item">
+            <mat-icon>more_vert</mat-icon>
+        </div>
+    </div>
+    <!-- 
     <div [ngSwitch]="menutype">
         <ul class="nav-list" *ngSwitchCase="'default'">
             <li><a href="#" [routerLink]="['/seller']">Seller</a></li>
@@ -23,7 +45,7 @@
         </ul>
 
         
-    </div>
+    </div> -->
 
 
 </div>
