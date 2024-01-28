@@ -7,11 +7,17 @@ import { environment } from "src/environments/environment";
 })
 export class UserService {
     url = environment.apiUrl;
-    /**
-     *
-     */
+    userInfo: any
     constructor(private http: HttpClient) {
 
+    }
+
+    setUserInfo(user: any) {
+        this.userInfo = user;
+        // this.userInfo.isLoggedIn = true;
+    }
+    getUserInfo() {
+        return this.userInfo
     }
 
     getAllUser() {

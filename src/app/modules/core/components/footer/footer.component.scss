@@ -51,12 +51,12 @@ $backgroundcolor:#388;
         flex-direction: row;
         align-items: center;
         width: 80%;
-        justify-content:flex-start;
+        justify-content:space-between;
         // background-color: red;
         border: 2px solid white;
         input{
             height: 50px;
-            width: 300px;
+            width: 100%;
             // border: 1px solid black;
             // margin-right: 20px;
             border-right: 2px solid white;

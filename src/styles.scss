@@ -42,6 +42,8 @@ $d-hypermarket-theme: mat.define-light-theme((
 
 body{
     font-family: "Helvetica Neue",Helvetica ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Target the overall scrollbar for the entire page */
+
 }
 
 $primarycolor:#c9dee5;
@@ -53,6 +55,25 @@ $backgroundcolor:#388;
 
 
 
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #a7a4a4; /* Adjust the color of the handle */
+  border-radius: 6px; /* Adjust the border radius as needed */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #eee; /* Adjust the color of the track */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f5f2f2; /* Adjust the color on hover */
+}
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 12px !important;}

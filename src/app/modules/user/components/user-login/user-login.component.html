@@ -1,11 +1,9 @@
-<div class="main-container">
+<!-- <div class="main-container">
   <mat-card>
     <mat-card-content>
       <form #loginForm="ngForm" (ngSubmit)="login()">
         <h2>Log In</h2>
-        <!-- <mat-error *ngIf="!loginValid">
-          The username and password were not recognized
-        </mat-error> -->
+        
         <mat-form-field>
           <input matInput placeholder="Email" [(ngModel)]="username" name="username" required>
           <mat-error>
@@ -22,4 +20,52 @@
       </form>
     </mat-card-content>
   </mat-card>
+</div> -->
+
+<div class="login__page" [style.background-image]="'url(https://images.unsplash.com/photo-1487700160041-babef9c3cb55?q=80&w=2052&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'">
+  <div class="login__row ">
+    <div class="login__hero">
+      <!-- <a [routerLink]="['']" class="w-48 inline-block">
+          <h1 style="font-size:35px;color: white;font-weight:bolder">D Hypermarket</h1>
+      </a>
+      <h2 style="color:white;font-size:24px">Welcome back!</h2> -->
+    </div>
+    <div class="login__content p-4 sm:p-8 flex flex-col justify-center bg-accent">
+      <div class="login">
+        <form #loginForm="ngForm" (ngSubmit)="login()">
+          <h1 class="text-2xl font-bold">Sign in</h1>
+          <div class="mb-4 mt-6">
+            <label htmlFor="email"> Username or Email </label>
+            <input id="email" type="text" placeholder="Your email address" name="username" [(ngModel)]="username"/>
+            <!-- <mat-error>
+              Please provide a valid email address
+            </mat-error> -->
+          </div>
+          <div class="mb-6 mt-6">
+            <label htmlFor="password"> Password </label>
+            <input id="password" type="password" placeholder="Your password"  name="password" [(ngModel)]="password"/>
+          </div>
+          <div class="checkbox-div">
+            <input id="remember_me" name="remember_me" type="checkbox" />
+            <label for="remember_me"> Keep me signed in </label>
+          </div>
+          <div class="submit-btn">
+            <button type="submit">
+              Sign in
+            </button>
+          </div>
+        </form>
+        <div class="mt-4">
+          <a href="#">Forgot password?</a>
+        </div>
+        <div class="mt-3">
+          <span class=""> Don't have an account? </span>
+          <a routerLink="/auth/signup"> Sign up </a>
+        </div>
+        <div class="mt-4">
+          <a [routerLink]="['/']"><mat-icon>keyboard_backspace</mat-icon>Go to Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,53 @@
+<div class="card">
+    <div class="wrapper">
+        <h4>My Cart</h4>
+        <div class="empty-cart" *ngIf="cartItems.length == 0 || cartItems === undefined">
+            <div class="content">
+                <div class="img-div">
+                    <img src="../../../../../assets/images/empty-cart.webp" alt="empty cart">
+                </div>
+                <div class="empty-text">
+                    <h4>Your cart is empty!!</h4>
+                    <p>Add items to it now.</p>
+                    <button mat-stroked-button color="primary" routerLink="/">Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-body" *ngIf="cartItems.length > 0 && cartItems !== undefined">
+            <div class="items">
+                <table style="width: 90%;">
+                    <thead style="text-align:left;">
+                        <th></th>
+                        <th>Items</th>
+                        <th>Size</th>
+                        <th>Color</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </thead>
+                    <tbody>
+                        <tr style="margin-bottom: 15px;padding: 10px;" *ngFor="let item of cartItems">
+                            <td style="padding: 5px;"><img [src]="item.thumbnail ?? item.image" class="cart-items-img"></td>
+                            <td style="align-items: center;"> {{item.title}} </td>
+                            <td>large</td>
+                            <td>Blue</td>
+                            <td>1</td>
+                            <td>{{item.price | currency :'$'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="price-details">
+                <div class="details">
+                    <ul>
+                        <li>Total Amount</li>
+                        <li>Total Amount</li>
+                        <li>Total Amount</li>
+                        <li>Total Amount</li>
+                        <li>Total Amount</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

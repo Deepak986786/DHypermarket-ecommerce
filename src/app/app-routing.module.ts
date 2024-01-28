@@ -5,7 +5,7 @@ import { ErrorComponent } from './modules/core/components/error/error.component'
 
 const routes: Routes = [
   {
-    path: '', component: HomeComponent
+    path: '', loadChildren: () => import('./modules/core/core.module').then(m => m.CoreModule)
   },
   {
     path: 'user', loadChildren: () => import('./modules/user/user.module').then(m => m.UserModule)
@@ -14,7 +14,7 @@ const routes: Routes = [
     path: 'seller', loadChildren: () => import('./modules/seller/seller.module').then(m => m.SellerModule)
   },
   {
-    path:"**",component : ErrorComponent
+    path: "**", component: ErrorComponent
   }
 ];
 
