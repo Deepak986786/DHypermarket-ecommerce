@@ -94,7 +94,6 @@ export class HomeComponent implements OnInit {
     { name: 'Travel', url: 'https://rukminim1.flixcart.com/flap/74/74/image/71050627a56b4693.png?q=100', link: 'travels' },
     { name: 'Beauty,Toys & more', url: 'https://rukminim1.flixcart.com/flap/74/74/image/dff3f7adcf3a90c6.png?q=100', link: 'beauty-and-more' },
 
-
   ]
 
   // carauselList = [

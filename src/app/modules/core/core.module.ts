@@ -30,7 +30,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ErrorComponent,
     SearchProductComponent,
     ProductListByCategoryComponent,
-
   ],
   imports: [
     CommonModule,

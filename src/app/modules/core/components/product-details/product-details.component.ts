@@ -1,3 +1,4 @@
+
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.services';
@@ -10,7 +11,6 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent implements OnInit {
-
   constructor(private activatedRoute: ActivatedRoute, private productService: ProductService
   ) { }
   customOptions: OwlOptions = {

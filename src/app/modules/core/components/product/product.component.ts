@@ -1,3 +1,4 @@
+
 import { Component, Input, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.services';
 
@@ -7,7 +8,6 @@ import { ProductService } from '../../services/product.services';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-
   constructor(private productService:ProductService) { }
 
   @Input() productInfo: any;

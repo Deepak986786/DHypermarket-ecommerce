@@ -29,9 +29,6 @@ export class UserLoginComponent implements OnInit {
         this.router.navigateByUrl(redirectURL);
       }
     }
-
-
-
   }
 
   login(): void {
