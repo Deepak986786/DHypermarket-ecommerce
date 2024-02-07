@@ -1,1 +1,84 @@
-<p>product-details works!</p>
+
+<div class="main-container">
+    <div class="product-detail">
+        <section id="product-info">
+            <div class="item-image-parent">
+                <div class="item-list-vertical">
+                    <div class="thumb-box" *ngFor="let item of productDetails?.images,let i=index">
+                        <img src={{item}} alt="thumbnail" (click)="mainImg = item" />
+                    </div>
+                </div>
+                <div class="item-image-main">
+                    <img src={{mainImg}} alt="default" />
+                </div>
+            </div>
+
+            <div class="item-info-parent">
+                <!-- main info -->
+                <div class="main-info">
+                    <h4>{{productDetails?.title}}</h4>
+                    <div class="star-rating">
+                        <span>★★★★</span>★
+                    </div>
+                    <p>Price: <span id="price">₹ 449.00</span></p>
+                </div>
+                <!-- Choose -->
+                <div class="select-items">
+
+                    <div class="change-color">
+                        <label><b>Colour:</b> Black</label><br>
+                        <div class="colors">
+                            <div class="color-div" *ngFor="let color of colorsChoice" (click)="selectedColor = color"
+                                [ngStyle]="{'background-color':color}"
+                                [class.selected]="selectedColor === color"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="change-size">
+                        <label><b>Size:</b></label><br>
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>2XL</option>
+                        </select>
+                    </div>
+
+                    <div class="description">
+                        <ul>
+                            <li>Care Instructions: Machine Wash</li>
+                            <li>Fit Type: Classic Fit</li>
+                            <li>Color name: Black-White</li>
+                            <li>Material: Cotton</li>
+                            <li>Pattern: Solid</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Description -->
+                <div class="description">
+                    <h3>Description</h3>
+                    <p>{{productDetails?.description}}</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div class="similar-products">
+        <div class="title">You might be interested in</div>
+        <div class="product-container">
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let slide of similarProducts">
+                    <ng-template carouselSlide [id]="slide.id">
+                        <product [productInfo]="slide" [category]="category"></product>
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+    </div>
+    <div class="reviews">
+
+    </div>
+</div>

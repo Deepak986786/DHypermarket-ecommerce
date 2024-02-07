@@ -1,0 +1,28 @@
+.content{
+    margin-top:52px;
+    // overflow: scroll;
+}
+
+/* app.component.css */
+
+/* Target the overall scrollbar for the entire page */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #555; /* Adjust the color of the handle */
+    border-radius: 6px; /* Adjust the border radius as needed */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #eee; /* Adjust the color of the track */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #777; /* Adjust the color on hover */
+  }
+  

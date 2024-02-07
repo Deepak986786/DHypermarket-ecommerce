@@ -5,13 +5,15 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
 import { UserRoutingModule } from './user.routing';
 import { MaterialComponentModule } from '../material.module';
 import { FormsModule } from '@angular/forms';
+import { UserCartComponent } from './components/user-cart/user-cart.component';
 
 
 
 @NgModule({
   declarations: [
     UserLoginComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    UserCartComponent
   ],
   imports: [
     CommonModule,

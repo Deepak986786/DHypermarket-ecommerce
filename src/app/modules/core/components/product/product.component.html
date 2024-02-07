@@ -1,1 +1,23 @@
-<p>product works!</p>
+
+<div class="product-container" [routerLink]="['/stores',category,productInfo.id]">
+    <div class="product-image">
+        <img src={{productInfo.thumbnail}} alt={{productInfo.title}}>
+    </div>
+    <div class="product-summary">
+        <div class="product-name">{{productInfo.title}}</div>
+        <div class="product-price">{{productInfo.price | currency :'USD'}}
+            <del style="color:grey"> {{calculateOriginalPrice(productInfo.price,discount)}}</del>
+        </div>
+        <div class="product-discount">Save {{discount}}% </div>
+        <div class="product-rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">☆</span>
+        </div>
+        <div class="add">
+            <button (click)="addToCart($event)">{{addCartBtnText}}</button>
+        </div>
+    </div>
+</div>
