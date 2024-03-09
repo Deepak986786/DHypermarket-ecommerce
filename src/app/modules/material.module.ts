@@ -13,7 +13,6 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatTableModule } from "@angular/material/table";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import {MatDatepickerModule} from "@angular/material/datepicker";
-import { MAT_MOMENT_DATE_ADAPTER_OPTIONS} from "@angular/material-moment-adapter"
 
 
 
@@ -38,7 +37,6 @@ import { MAT_MOMENT_DATE_ADAPTER_OPTIONS} from "@angular/material-moment-adapter
         MatNativeDateModule
     ],
     providers: [
-        {provide: MAT_MOMENT_DATE_ADAPTER_OPTIONS, useValue: {useUtc: true}}
       ]
 })
 export class MaterialComponentModule { }

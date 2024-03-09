@@ -15,7 +15,6 @@ import { SearchProductComponent } from './components/search-product/search-produ
 import { ProductListByCategoryComponent } from './components/product-list-by-category/product-list-by-category.component';
 import { CoreRoutingModule } from './core.routing';
 import { HttpClientModule } from '@angular/common/http';
-import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
@@ -39,7 +38,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     MaterialComponentModule,
     CoreRoutingModule,
     HttpClientModule,
-    IvyCarouselModule,
     CarouselModule
   ],
   exports: [

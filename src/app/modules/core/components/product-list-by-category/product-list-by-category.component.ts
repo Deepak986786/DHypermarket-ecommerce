@@ -31,7 +31,7 @@ export class ProductListByCategoryComponent implements OnInit {
   category = ''
   ngOnInit(): void {
     this.activateRoute.params.pipe(
-      switchMap(params => {
+      switchMap((params:any) => {
         this.category = params["category"]
 
         const selectedCategory = this.categoryArray.find(cat => cat.name === this.category);
@@ -40,7 +40,7 @@ export class ProductListByCategoryComponent implements OnInit {
         const observables = selectedCategory.items.map(item => this.productService.getProductsByCategoryId(item))
         return forkJoin(observables).pipe(
           //for returning the values by categorized format
-          map(responses => {
+          map((responses:any) => {
             const result: any = {}
             selectedCategory.items.forEach((item, index) => {
               result[item] = responses[index];
@@ -56,7 +56,7 @@ export class ProductListByCategoryComponent implements OnInit {
       // console.log(mergedData);
 
     },
-      (error) => {
+      (error:any) => {
         console.log(error)
       })
 
